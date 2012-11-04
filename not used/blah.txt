@@ -1,0 +1,25 @@
+Meme generator
+
+http://version1.api.memegenerator.net/Generator_Select_ByUrlNameOrGeneratorID?generatorID=1695512&urlName=Shotanomics
+
+http://version1.api.memegenerator.net/Instance_Create?username=ttrojan&password=password&languageCode=en&generatorID=45&imageID=20&text0=push%20a%20hipster%20down%20the%20stairs&text1=tiz%20the%20season%20bitches!
+
+
+{
+    "success": true,
+    "result": {
+        "generatorID": 45,
+        "displayName": "Insanity Wolf",
+        "urlName": "Insanity-Wolf",
+        "totalVotesScore": 0,
+        "imageUrl": "http://cdn.memegenerator.net/images/400x/20.jpg",
+        "instanceID": 29367743,
+        "text0": "push a hipster down the stairs",
+        "text1": "tiz the season bitches!",
+        "instanceImageUrl": "http://cdn.memegenerator.net/instances/400x/29367743.jpg",
+        "instanceUrl": "http://memegenerator.net/instance/29367743"
+    }
+}
+
+
+https://github.com/Floby/node-meme

@@ -1,0 +1,23 @@
+extends ./layouts/main
+
+block javascripts
+
+block stylesheets
+  style(type="text/css", media="screen")
+    body{ 
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+block content
+
+  div(class="container")
+    //Main hero unit for a primary marketing message or call to action
+    div(class="hero-unit")
+      h1 Heart-felt Meme Generator
+      p  AKA: Give us your e-mail so that we can ask you to vote later
+      p
+        a(href="/upload-image", class="btn btn-primary btn-large") Create your meme &raquo;
+
+    //Example row of columns
+    div(class="row")

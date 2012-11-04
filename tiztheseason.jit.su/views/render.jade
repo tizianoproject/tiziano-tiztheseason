@@ -1,0 +1,37 @@
+extends ./layouts/main
+
+block javascripts
+  //-script(defer, src='js/plugins.js')
+
+block stylesheets
+  style(type="text/css", media="screen")
+    body{ 
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+block content
+
+  div(class="container")
+    //Main hero unit for a primary marketing message or call to action
+    div(class="hero-unit")
+      h1 Form
+          form(action='/signup',method='post')
+            div(data-role='fieldcontain')
+              fieldset(data-role='controlgroup')
+                label(for='email') email
+                   input(id='email',type='text',value='',placeholder='@',name='email')
+            div#passworddiv(data-role='fieldcontain')
+              fieldset(data-role='controlgroup')
+                label(for='password') password
+                   input(id='password',type='password',value='',placeholder='',name='password')
+            div(id='hiddendiv',data-role='fieldcontain')
+              fieldset(data-role='controlgroup')
+                label(for='hidden_password') password
+                   input(id='hidden_password',type='text',value='',placeholder='',name='password2')
+            div(data-role='fieldcontain')
+              fieldset(data-type='vertical', data-role='controlgroup')                                           
+               label(for='showpass') show password
+               input(id='showpass',type='checkbox')
+            div(data-role='fieldcontain')   
+              input(type='submit',value='Sign Up',data-transition='fade', data-theme='c')
