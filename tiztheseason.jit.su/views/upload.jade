@@ -2,18 +2,12 @@ extends ./layouts/main
 
 block javascripts
   script(src="https://api.filepicker.io/v1/filepicker.js")
+
   script
     $(document).ready(function(){
-       filepicker.setKey('Ape0OVEStOC6k9xtVvAeAz');
-       filepicker.pick( onCompleteHandler );
-       function onCompleteHandler( fpfile ){
-         $(".confirm p").html('You just uploaded '+
-          fpfile.filename+'! '+
-          'You can download the file at '+ 
-          "<a href='" + fpfile.url + "' target='_new'><img src='" + fpfile.url + "' border='0' /></a>" );
-
-          $(".confirm").show();
-          }
+      $.getScript("/js/app.js", onScriptComplete );
+      function onScriptComplete(){
+      }
     });
 
 block stylesheets
@@ -37,10 +31,10 @@ block content
     //Main hero unit for a primary marketing message or call to action
     div(class="hero-unit")
       div
-        input(type="filepicker-dragdrop")
+        h2 Pleas pick a file from your computer
+        //input(type="filepicker")
+        input(type="filepicker", data-fp-apikey="Ape0OVEStOC6k9xtVvAeAz", data-fp-container="modal", data-fp-services="COMPUTER,DROPBOX,FACEBOOK,GOOGLE_DRIVE,GMAIL,INSTAGRAM", onchange="onChangeHandler(event.fpfile)")
         //button(data-fp-mimetype="image/png", data-fp-url="http://www.filepicker.io/static/img/success.png") Save File
 
     div(class="row")
       div(class="span4 confirm")
-        h2 Success
-        p 
