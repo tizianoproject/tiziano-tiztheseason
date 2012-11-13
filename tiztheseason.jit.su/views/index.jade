@@ -1,23 +1,59 @@
 extends ./layouts/main
 
 block javascripts
+  //Display
+  script(src="//s3.amazonaws.com/scripts.getchute.com/4411.js", type="text/javascript")
+  //Chute
+  script(src="//s3.amazonaws.com/scripts.getchute.com/4412.js", type="text/javascript")
+  script(type="text/javascript")
+    $(document).ready(function(){
+      includeFooter( new Date() );
+      $.getScript("/js/slidechute.j", onScriptLoaded );
+        function onScriptLoaded(){
+        }
+    });  
 
 block stylesheets
+  link(rel="stylesheet", href="/css/main.css")
+  link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Bree+Serif');
   style(type="text/css", media="screen")
     body{ 
-      padding-top: 60px;
+      padding-top: 80px;
       padding-bottom: 40px;
     }
 
 block content
-
   div(class="container")
     //Main hero unit for a primary marketing message or call to action
     div(class="hero-unit")
-      h1 Heart-felt Meme Generator
-      p  AKA: Give us your e-mail so that we can ask you to vote later
-      p
-        a(href="/upload-image", class="btn btn-primary btn-large") Create your meme &raquo;
+      a(href="#", class="span3 comp")
+        img(src="/img/logo.png")
+      p  <span>T</span>his holiday season we, lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nulla at vero eros et accumsan et iusto odio dignissim qui praesent luptatum zzril delenit augue duis dolore te nulla facilisi, et cetera. 
+    div(class="actions")
+      //Example row of columns
+      div(class="row")
+        div(class="span4 icn-a")
+          h2 Organizations
+          p Win $40,000, two-month Tiziano Project training program in their community
+          p
+            a(class="btn", href="#") Sign up!
+  
+        div(class="span4 icn-b")
+          h2 Student Group
+          p Win a $15,000 grant + Tiziano support to complete a Tiziano Project Training program in a community of their choice
+          p
+            a(class="btn", href="#") Sign up!
+  
+        div(class="span4 icn-c")
+           h2 Individual
+           p Win a  round-trip ticket to anywhere in the world!
+           p
+            a(class="btn", href="#") Sign up!
+    div(id="display")
 
-    //Example row of columns
-    div(class="row")
+    div(id="more")
+      p lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nulla at vero eros et accumsan et iusto odio dignissim qui praesent luptatum zzril delenit augue duis dolore te nulla facilisi, et cetera
+
+    div(class="")
+      p lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nulla at vero eros et accumsan et iusto odio dignissim qui praesent luptatum zzril delenit augue duis dolore te nulla facilisi, et cetera
+
