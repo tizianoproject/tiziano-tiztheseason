@@ -45,16 +45,16 @@ Nav
 	background: transparent url("../img/gui/banner.png") top center repeat-x;
 	height: 80px;
 }
-.container{
-	border: 1px solid blue;
-}
 /******************
 Hero Unit
 ******************/
 .hero-unit{
 	background: transparent;
-	border-bottom: 0px solid red;
-	height: 115px;
+	border: 1px solid green;
+}
+.hero-unit .comp{
+	border: 1px solid red;
+	margin-bottom: 40px;
 }
 .hero-unit p{
 	font-size: 18px;
@@ -117,7 +117,42 @@ footer{
 	color: white;
 }
 footer .inner{
-	width: 800px;
 	margin: 0 auto;
-	padding: 25px 0;
+	padding: 25px 20px;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 767px) {
+	.hero-unit{
+		padding-bottom: 0;
+	}
+	.container{
+		border: 1px solid blue;
+	}
+	footer .inner{
+		width: auto;
+	}
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 768px) {
+	.hero-unit{
+	padding-bottom: auto;
+
+	}
+	.hero-unit .comp{
+		margin-right: 40px;
+	}
+	footer .inner{
+		width: 800px;
+	}
+}
+@media only screen and (min-width : 980px) {
+	.hero-unit{
+		padding-bottom: auto;
+	}
+}
+@media (min-width: 1200px){
+	.hero-unit{
+		padding-bottom: 90px;
+	}
 }
