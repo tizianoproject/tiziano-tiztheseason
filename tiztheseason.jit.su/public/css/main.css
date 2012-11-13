@@ -50,10 +50,10 @@ Hero Unit
 ******************/
 .hero-unit{
 	background: transparent;
-	border: 1px solid green;
+	border: 0px solid green;
 }
 .hero-unit .comp{
-	border: 1px solid red;
+	border: 0px solid red;
 	margin-bottom: 40px;
 }
 .hero-unit p{
@@ -77,7 +77,9 @@ Action
 	color: #333333;
 	font-size: 14px;
 }
+
 .actions {
+	margin-bottom: 40px;
 }
 .actions .span4 {
 	padding-top: 219px;
@@ -108,6 +110,26 @@ Action
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
+.btn:hover{
+	background: transparent;
+  	background-color: #da4f49;
+}
+/******************
+Banner
+******************/
+.banner .row{
+	background-image: url("../img/gui/what-to-you-celebrate-this-season.png"), url("../img/gui/bg-green.png");
+	background-position: center center, top left;
+    background-repeat: no-repeat, repeat-x;
+	height: 115px;
+}
+.banner2 .row{
+	background-image: url("../img/gui/how-to-add-your-photo.png"), url("../img/gui/bg-green-red.png");
+	background-position: center 120px, top left;
+    background-repeat: no-repeat, repeat-x;
+	height: 516px;
+}
+
 /******************
 Footer
 ******************/
