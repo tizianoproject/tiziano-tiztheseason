@@ -1,0 +1,61 @@
+/******************
+Spinnaker-Regular
+******************/
+@font-face {
+  font-family: "Spinnaker-Regular";
+  src:  url('../fonts/Spinnaker-Regular.eot'); /* IE 5-8 */
+  src:  local('☺'), /* sneakily trick IE */
+        url('../fonts/Spinnaker-Regular.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+        url('../fonts/Spinnaker-Regular') format('truetype'), /* Opera, Safari */
+        url('../fonts/Spinnaker-Regular#font') format('svg'); /* iOS */
+}
+
+
+/******************
+Globals
+******************/
+html{
+
+}
+body{
+    background: transparent;
+    background-image: url("../img/gui/bg.png"), url("../img/gui/bg.png");
+    background-position: top left, top left;
+    background-repeat: repeat-x, repeat;
+    padding: 0;
+	font-family: 'Bree Serif', sans-serif;
+	font-size: 14px;
+}
+.hide{
+	display: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+a{
+	color: white;
+}
+/******************
+Nav
+******************/
+.navbar-inner{
+	background: transparent url("../img/gui/banner.png") top center repeat-x;
+	height: 80px;
+}
+
+
+/******************
+Footer
+******************/
+footer{
+	background: transparent url("../img/gui/bg-footer.png") top left repeat-x;
+	min-height: 70px;
+	color: white;
+}
+footer .inner{
+	margin: 0 auto;
+	padding: 25px 20px;
+}

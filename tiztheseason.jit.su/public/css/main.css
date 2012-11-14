@@ -18,13 +18,11 @@ html{
 
 }
 body{
-    background: transparent;
-    background-image: url("../img/gui/bg.png"), url("../img/gui/bg.png");
-    background-position: top left, top left;
-    background-repeat: repeat-x, repeat;
-    padding: 0;
+	background: transparent url("../img/gui/bg.jpg") top left repeat-x;
 	font-family: 'Bree Serif', sans-serif;
 	font-size: 14px;
+    padding: 0;
+	color: #333333;
 }
 .hide{
 	display: none;
@@ -43,7 +41,7 @@ Nav
 ******************/
 .navbar-inner{
 	background: transparent url("../img/gui/banner.png") top center repeat-x;
-	height: 80px;
+	height: 70px;
 }
 /******************
 Hero Unit
@@ -85,6 +83,7 @@ Action
 	padding-top: 219px;
 	text-align: center;
 }
+
 .icn-a{
 	background: transparent url("../img/actions/organizations.png") top center no-repeat;
 }
@@ -118,18 +117,67 @@ Action
 Banner
 ******************/
 .banner .row{
-	background-image: url("../img/gui/what-to-you-celebrate-this-season.png"), url("../img/gui/bg-green.png");
+	background-image: url("../img/gui/what-to-you-celebrate-this-season.png"), url("../img/gui/argyle-green.jpg");
 	background-position: center center, top left;
     background-repeat: no-repeat, repeat-x;
-	height: 115px;
+	height: 100px;
 }
 .banner2 .row{
-	background-image: url("../img/gui/how-to-add-your-photo.png"), url("../img/gui/bg-green-red.png");
+	background-image: url("../img/gui/how-to-add-your-photo.png"), url("../img/gui/bg-green-red.jpg");
 	background-position: center 120px, top left;
     background-repeat: no-repeat, repeat-x;
-	height: 516px;
+	height: 200px;
+	padding-top: 200px;
+	margin-bottom: 68px;
 }
+#chute_widget_4412{
+	width: 800px;
+}
+.chute-loaded, .chute-base-widget{
 
+}
+/******************
+Info
+******************/
+.info{
+}
+.info h2{
+	font-family: 'Spinnaker-Regular', sans-serif;
+	text-transform: uppercase;	
+	text-align: center;
+	color: #207c74;
+	margin-bottom: 55px;
+}
+.info .video{
+	text-align: center;
+	width: 830px;
+	margin: 0 auto;
+	margin-bottom: 39px;
+}
+.info h3{
+	font-family: 'Spinnaker-Regular', sans-serif;
+	margin: 0 auto;
+	color: #e43732;
+	margin-bottom: 23px;
+}
+.info .about{
+	font-family: 'Spinnaker-Regular', sans-serif;
+	width: 830px;
+	margin: 0 auto;
+}
+.info .about p{
+	margin-bottom: 21px;
+}
+.info ul{
+	
+}
+.info li{
+	list-style: none;
+	margin-top: 21px;
+}
+.info li span{
+	color: #207c74;
+}
 /******************
 Footer
 ******************/
@@ -145,11 +193,18 @@ footer .inner{
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 767px) {
+	.actions .span4 p{
+		padding: 0 40px;
+	}
+	.banner .row{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
 	.hero-unit{
 		padding-bottom: 0;
 	}
 	.container{
-		border: 1px solid blue;
+
 	}
 	footer .inner{
 		width: auto;
@@ -158,23 +213,35 @@ footer .inner{
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 768px) {
 	.hero-unit{
-	padding-bottom: auto;
-
+		padding-bottom: auto;
 	}
 	.hero-unit .comp{
 		margin-right: 40px;
 	}
+	.actions .span4 p{
+		padding: 0;
+	}	
 	footer .inner{
 		width: 800px;
 	}
 }
 @media only screen and (min-width : 980px) {
+	.navbar-inner{
+		height: 80px;
+	}
 	.hero-unit{
 		padding-bottom: auto;
+	}
+	.actions .span4 p{
+		padding: 0 30px;
+
 	}
 }
 @media (min-width: 1200px){
 	.hero-unit{
 		padding-bottom: 90px;
+	}
+	.actions .span4 p{
+		padding: 0 50px;
 	}
 }
